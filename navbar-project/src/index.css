@@ -1,0 +1,150 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding-bottom: 5px;
+  background-color: rgb(0, 0, 0);
+}
+nav ul {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+nav ul li {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.2s;
+}
+nav ul li:hover {
+  transition: 0.2s;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 255);
+}
+.button {
+  display: flex;
+  padding: 10px;
+}
+.button button {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+.button button:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+.button button:active {
+  border: none;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  animation: bodyBackground 8s ease-in-out infinite;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  border: 5px solid transparent;
+  border-radius: 15px;
+  background-size: 200% 200%;
+  animation: borderMove 6s linear infinite;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  background: linear-gradient(90deg, #f70000, #f70000, #000000, #d0cece);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textWave 3s ease-in-out infinite, textGradient 6s linear infinite;
+}
+.title {
+  position: absolute;
+  left: 43%;
+}
+.title h2 {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-variant: small-caps;
+  background: linear-gradient(90deg, #141cff, #ff1a1a, #ffffff, #c9ff04);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes textWave {
+  0%,
+  100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bodyBackground {
+  0% {
+    background: rgb(102, 3, 3);
+    background: linear-gradient(
+      90deg,
+      rgba(102, 3, 3, 1) 0%,
+      rgba(30, 29, 29, 1) 48%,
+      rgba(103, 103, 103, 1) 100%
+    );
+  }
+  50% {
+    background: rgb(3, 40, 102);
+    background: linear-gradient(
+      90deg,
+      rgba(3, 40, 102, 1) 0%,
+      rgba(219, 219, 219, 1) 48%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  100% {
+    background: rgb(245, 255, 0);
+    background: linear-gradient(
+      95deg,
+      rgba(245, 255, 0, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(234, 23, 23, 1) 100%
+    );
+  }
+}
