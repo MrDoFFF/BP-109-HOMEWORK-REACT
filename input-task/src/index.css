@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 5rem;
+}
+form input {
+  color: white;
+  padding: 5px;
+  background-color: transparent;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+input::placeholder {
+  font-size: 18px;
+  color: white;
+  font-family: serif;
+}
+form button {
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.show {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.show h2 {
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  padding: 10px;
+}
+span {
+  border-radius: 10px;
+  padding: 0 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+}
+.reverse {
+  text-align: center;
+  margin-top: 1rem;
+}
+.reverse h5 {
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.toggle-mode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dark-mode {
+  height: 100vh;
+  background-color: #121212;
+  transition: background-color 0.5s, color 0.5s;
+}
+.light-mode {
+  height: 100vh;
+  transition: background-color 0.5s, color 0.5s;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right, rgb(8, 0, 255), yellow);
+  background-repeat: no-repeat;
+}
+.dark-mode .toggle-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+.light-mode .toggle-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
